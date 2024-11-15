@@ -1,0 +1,110 @@
+.auth-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+}
+
+.auth-wrapper .auth-inner {
+  width: 100%;
+}
+
+.auth-wrapper.auth-basic {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+  background-image: url('../../images/bg/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-wrapper.auth-basic .auth-inner {
+  margin-top: auto;
+  position: relative;
+}
+
+.auth-wrapper.auth-basic .footer-text > span {
+  margin-right: 5px;
+}
+
+.auth-wrapper.auth-basic .auth-inner {
+  max-width: 420px;
+}
+
+#resetpwd.auth-wrapper.auth-basic .auth-inner {
+  max-width: 45%;
+}
+
+@media screen and (max-width: 1280px) {
+  #resetpwd.auth-wrapper.auth-basic .auth-inner {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #resetpwd.auth-wrapper.auth-basic .auth-inner {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #resetpwd.auth-wrapper.auth-basic .auth-inner {
+    max-width: 95%;
+    margin-bottom: 1rem;
+  }
+}
+
+.auth-wrapper .brand-logo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1.2rem;
+}
+
+.auth-wrapper .brand-logo > img {
+  width: 200px;
+  height: 190px;
+  max-width: 100%;
+}
+
+.auth-wrapper .card-title {
+  margin-bottom: 1rem;
+  font-size: 1.365rem;
+}
+
+.auth-wrapper .auth-input {
+  max-width: 50px;
+  padding-right: 0.571rem;
+  padding-left: 0.571rem;
+}
+
+.auth-wrapper .auth-bg {
+  background-color: #fff;
+}
+
+@media (max-height: 825px) and (max-width: 991.98px) {
+  .auth-wrapper .auth-bg {
+    padding-top: 3rem;
+    margin: auto 0;
+  }
+
+  .auth-wrapper .auth-inner {
+    background-color: #fff;
+  }
+}
+
+.auth-wrapper .toast {
+  width: 480px;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1) !important;
+}
+
+.auth-wrapper .toast-header {
+  border-bottom: 0;
+}
+
+.auth-wrapper label > .btn {
+  vertical-align: baseline;
+}
