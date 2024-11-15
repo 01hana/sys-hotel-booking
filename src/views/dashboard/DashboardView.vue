@@ -2,6 +2,12 @@
 import StatisticBar from './StatisticBar.vue'
 import LineChart from './LineChart.vue'
 import PieChart from './PieChart.vue'
+
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: '數據面板'
+})
 </script>
 
 <template>

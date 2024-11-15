@@ -3,6 +3,12 @@ import DtHeader from './DtHeader.vue'
 import DtTable from './DtTable.vue'
 import DtFooter from './DtFooter.vue'
 import CreateEditModal from './CreateEditModal.vue'
+
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: '訂單管理'
+})
 </script>
 
 <template>

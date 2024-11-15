@@ -1,8 +1,10 @@
+import DashboardView from '@/views/dashboard/DashboardView.vue'
+
 export default [
   {
     path: '/',
     name: 'dashboard',
-    component: () => import('@/views/dashboard/DashboardView.vue'),
+    component: DashboardView,
     meta: {
       requiresAuth: true
     }

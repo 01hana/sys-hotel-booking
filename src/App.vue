@@ -4,10 +4,7 @@ import { useHead } from '@unhead/vue'
 const route = useRoute()
 const navigation = inject('navigation')
 
-const title = ref('')
-
 useHead({
-  title: () => title.value,
   titleTemplate: navigation.main().titleTemplate
 })
 
